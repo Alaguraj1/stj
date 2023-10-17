@@ -39,7 +39,7 @@ function Signup() {
                 <div className='container'>
                     <div className="login-left">
                         <h1 className="login-title">WELCOME</h1>
-                        <p className="login-subTitle">User Login</p>
+                        <p className="login-subTitle">User Signup</p>
                         <div style={{ marginTop: "20px" }}>
                             <Form
                                 form={form}
@@ -141,6 +141,7 @@ function Signup() {
                                         type="primary"
                                         htmlType="submit"
                                         style={{ background: "#9a2526" }}
+                                        size="large"
                                     >
                                         Sign Up
                                     </Button>
