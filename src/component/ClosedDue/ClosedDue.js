@@ -20,18 +20,21 @@ const ClosedDue = () => {
     const dataSource = [
         {
             key: '1',
+            sno:1,
             group: 500,
             name: "Adams",
             amount: 15000,
         },
         {
             key: '2',
+            sno:2,
             group: 1000,
             name: "Raj",
             amount: 15000,
         },
         {
             key: '3',
+            sno:3,
             group: 1000,
             name: "Bala",
             amount: 15000,
@@ -39,6 +42,11 @@ const ClosedDue = () => {
     ];
 
     const columns = [
+        {
+            title: 'S No',
+            dataIndex: 'sno',
+            key: 'sno',
+        },
         {
             title: 'Group',
             dataIndex: 'group',

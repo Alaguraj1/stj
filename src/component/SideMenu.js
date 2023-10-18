@@ -1,5 +1,6 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom/dist';
+import "./SideMenu.css"
 
 const SideMenu = () => {
 
@@ -23,13 +24,17 @@ const SideMenu = () => {
     }
 
 
-  return (
-<div>
-<div className="elisc_tm_topbar fixed top-0 left-0 right-0 h-[50px] bg-white z-[15] hidden">
+    return (
+        <div>
+            <div className="elisc_tm_topbar fixed top-0 left-0 right-0 h-[50px] bg-white z-[15] hidden">
                 <div className="topbar_inner w-full h-full clear-both flex items-center justify-between py-0 px-[20px]">
-                    <div className="logo" data-type="image"> <a className="image" href="#"><img
+                    {/* <div className="logo" data-type="image"> <a className="image" href="#"><img
                         className="max-w-[100px] max-h-[40px]" src="assets/img/logo/logo.png" alt="logo" /></a><a
-                            className="text" href="#"><span>R.Elisc</span></a></div>
+                            className="text" href="#"><span>R.Elisc</span></a>
+                    </div> */}
+                    <div className='logo-cover'>
+                            <img src='assets/img/logo/logo.png' alt='' />
+                        </div>
                     <div className="trigger" onClick={menuopenclose}>
                         <div className={`hamburger hamburger--slider ${menuStatus}`}>
                             <div className="hamburger-box">
@@ -71,7 +76,7 @@ const SideMenu = () => {
                             </ul>
                         </div>
                         <div className="copyright w-full float-left">
-                        Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
+                            Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
                         </div>
                     </div>
                 </div>
@@ -80,10 +85,15 @@ const SideMenu = () => {
                 className="elisc_tm_sidebar w-[370px] h-[100vh] fixed left-0 top-0 border-solid border-[rgba(85,82,124,.1)] border-r">
                 <div className="sidebar_inner w-full float-left h-auto clear-both text-center">
                     <div className="author w-full float-left pt-[60px]">
-                        <div className="image relative w-[118px] inline-block"><img className="relative opacity-0 min-w-full"
+                        {/* <div className="image relative w-[118px] inline-block"><img className="relative opacity-0 min-w-full"
                             src="assets/img/thumbs/1-1.jpg" alt="image" />
                             <div className="main absolute inset-0 bg-no-repeat bg-cover bg-center rounded-full"
-                                data-img-url="assets/img/about/1.jpg"></div>
+                                data-img-url="assets/img/about/1.jpg">
+
+                            </div>
+                        </div> */}
+                        <div className='logo-cover'>
+                            <img src='assets/img/logo/logo.png' alt='' />
                         </div>
                         <div className="name w-full float-left mt-[-19px]">
                             {/* <h3><span>Robert Elisc<span className="back">Robert Elisc</span></span></h3> */}
@@ -120,13 +130,13 @@ const SideMenu = () => {
                             </ul>
                         </div>
                         <div className="text py-0 px-[50px]">
-                        Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
+                            Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
                         </div>
                     </div>
                 </div>
             </div>
-</div>
-  )
+        </div>
+    )
 }
 
 export default SideMenu

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Table, } from 'antd';
 import "./Payment.css"
 import { Select } from 'antd';
@@ -10,11 +10,12 @@ const { Option } = Select;
 const Payment = () => {
 
     const [selectedOption, setSelectedOption] = useState(null);
+    const [selectionType, setSelectionType] = useState('checkbox');
 
-    
+
     const handleChange = (name, value) => {
         setSelectedOption(value);
-       
+
     };
 
     const dataSource = [
@@ -73,6 +74,17 @@ const Payment = () => {
     ];
 
 
+    const rowSelection = {
+        onChange: (selectedRowKeys, selectedRows) => {
+          console.log(`selectedRowKeys: ${selectedRowKeys}`, 'selectedRows: ', selectedRows);
+        },
+        getCheckboxProps: (record) => ({
+          disabled: record.name === 'Disabled User',
+          // Column configuration not to be checked
+          name: record.name,
+        }),
+      };
+
     return (
         <div className="elisc_tm_all_wrap" data-magic-cursor="show" data-enter="fadeInLeft" data-exit="true">
             <SideMenuTwo />
@@ -97,7 +109,10 @@ const Payment = () => {
                     </div>
 
                     <div style={{ paddingTop: "20px" }}>
-                        <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} />
+                        <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} rowSelection={{
+                            type: selectionType,
+                            ...rowSelection,
+                        }} />
                     </div>
                     <div className='closedDue-pay-outer'>
                         <button size='large' className='closedDue-pay'>PAY</button>
@@ -106,7 +121,7 @@ const Payment = () => {
             </div>
 
         </div>
-        )
+    )
 }
 
 export default Payment
