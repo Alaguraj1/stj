@@ -9,7 +9,7 @@ secondary color : #9a2526, red
     padding: 0px 150px;
     display: flex;
     align-items: center !important;
-    height: 100vh;
+    height: auto;
 }
 
 .chit-details-title{
@@ -24,7 +24,7 @@ secondary color : #9a2526, red
 
 .select-option-outer{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 :where(.css-dev-only-do-not-override-amq5gd).ant-table-wrapper .ant-table-thead>tr>th {
@@ -34,3 +34,10 @@ secondary color : #9a2526, red
     overflow-x: auto !important;
   }
   
+  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead >tr>td{
+    background: #9a2526;
+    font-size: 14px;
+    overflow-x: auto !important;
+    color: white !important;
+
+}

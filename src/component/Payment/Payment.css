@@ -1,0 +1,39 @@
+
+/* 
+primary color :  #fff2d8,  yellow
+secondary color : #9a2526, red 
+*/
+
+
+.closedDue-container{
+    background-color:#fff2d8 ;
+    padding: 0px 150px;
+    height: 100vh;
+}
+
+.closedDue-title-outer{
+    padding: 50px 0px 20px 0px;
+
+}
+
+.closedDue-pay-outer{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: end;
+}
+
+.closedDue-pay{
+    padding: 5px 60px !important;
+    background-color: #9a2526;
+    color: white;
+    font-weight: 600;
+    border-radius: 5PX;
+}
+.closedDue-pay:hover{
+    background-color: #a84647;
+}
+
+.closed-due-title{
+    color: #9a2526;
+
+}

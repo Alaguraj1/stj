@@ -5,6 +5,7 @@ import Home from './component/Home'
 import Signup from "./component/Signup/Singup";
 import ChitDetails from "./component/ChitDetails/ChitDetails";
 import PayDue from "./component/PayDue/PayDue";
+import Payment from "./component/Payment/Payment";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/chit-details" element={<ChitDetails />} />
           <Route path="/pay-due" element={<PayDue />} />
+          <Route path="/Payment" element={<Payment />} />
 
         </Routes>
       </BrowserRouter>

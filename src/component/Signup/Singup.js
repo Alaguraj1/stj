@@ -1,8 +1,8 @@
 import "./Signup.css"
-import React, { useState } from 'react';
-import { Form, Input, Button, Checkbox, Modal } from 'antd';
+// import React, { useState } from 'react';
+import { Form, Input, Button, Checkbox } from 'antd';
 import { Link } from 'react-router-dom/dist';
-import { UserOutlined, UnlockOutlined } from '@ant-design/icons'
+// import { UserOutlined, UnlockOutlined } from '@ant-design/icons'
 import SideMenu from "../SideMenu";
 import { useNavigate } from 'react-router-dom';
 

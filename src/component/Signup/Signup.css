@@ -9,7 +9,7 @@ secondary color : #9a2526, red
       padding: 0px 150px;
       display: flex;
       align-items: center !important;
-      height: 100vh;
+      height: auto;
   }
   
   .login-left{
@@ -59,7 +59,7 @@ secondary color : #9a2526, red
   
   .login-input-style {
     background: none !important;
-    border-bottom: 1px solid #9e9e9e !important;
+    border: 1px solid #9e9e9e !important;
     border: none;
     border-radius: 0px;
   
