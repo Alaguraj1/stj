@@ -33,7 +33,7 @@ const SideMenu = () => {
                             className="text" href="#"><span>R.Elisc</span></a>
                     </div> */}
                     <div className='logo-cover'>
-                            <img src='assets/img/logo/logo.png' alt='' />
+                            <img src='assets/img/logo/logo.png' alt='' className='logo-mobile' />
                         </div>
                     <div className="trigger" onClick={menuopenclose}>
                         <div className={`hamburger hamburger--slider ${menuStatus}`}>
@@ -93,7 +93,7 @@ const SideMenu = () => {
                             </div>
                         </div> */}
                         <div className='logo-cover'>
-                            <img src='assets/img/logo/logo.png' alt='' />
+                            <img src='assets/img/logo/logo.png' alt='' className='logo-mobile'/>
                         </div>
                         <div className="name w-full float-left mt-[-19px]">
                             {/* <h3><span>Robert Elisc<span className="back">Robert Elisc</span></span></h3> */}

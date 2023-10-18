@@ -11,3 +11,18 @@ secondary color : #9a2526, red
 :where(.css-dev-only-do-not-override-3mqfnx).ant-modal-confirm .ant-modal-confirm-btns .ant-btn+.ant-btn{
     background:#9a2526 ;
 }
+
+
+
+
+@media(max-width:1024px){
+
+    .logo-cover{
+        justify-content: start;
+    }
+
+    
+    .logo-mobile{
+        width: 20%;
+    }
+}

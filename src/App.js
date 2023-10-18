@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Login from "./component/Login/Login"
-import Home from './component/Home'
 import Signup from "./component/Signup/Singup";
 import ChitDetails from "./component/ChitDetails/ChitDetails";
 import PayDue from "./component/PayDue/PayDue";
 import Payment from "./component/Payment/Payment";
 import ClosedDue from "./component/ClosedDue/ClosedDue";
+import Home from "./component/Home/Home";
 
 function App() {
   return (
