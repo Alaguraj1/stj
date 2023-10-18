@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import SideMenu from '../SideMenu'
 import { Table, Button, Checkbox } from 'antd';
 import { Select } from 'antd';
 import "./ChitDetails.css"
+import SideMenuTwo from '../SideMenuTwo';
 
 const { Option } = Select;
 
@@ -66,7 +66,7 @@ const ChitDetails = () => {
 
     return (
         <div className="elisc_tm_all_wrap" data-magic-cursor="show" data-enter="fadeInLeft" data-exit="true">
-            <SideMenu />
+            <SideMenuTwo />
             <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]">
 
                 <div className="details w-full min-h-[100vh] flex items-center container">

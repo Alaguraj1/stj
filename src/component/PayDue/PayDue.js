@@ -1,8 +1,8 @@
 import React from 'react'
 import { Table, Form, Input, Button,  Select, Upload, } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import SideMenu from '../SideMenu';
 import "./PayDue.css"
+import SideMenuTwo from '../SideMenuTwo';
 
 const PayDue = () => {
 
@@ -102,7 +102,7 @@ const PayDue = () => {
 
   return (
     <div className="elisc_tm_all_wrap" data-magic-cursor="show" data-enter="fadeInLeft" data-exit="true">
-      <SideMenu />
+      <SideMenuTwo />
       <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px] ">
         <div className='payDue-container'>
           <div >

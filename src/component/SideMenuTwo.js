@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom/dist';
 
-const SideMenu = () => {
+const SideMenuTwo = () => {
 
     const [menu, setMenu] = useState(false);
     const [menuStatus, setMenuStatus] = useState('');
@@ -23,9 +23,9 @@ const SideMenu = () => {
     }
 
 
-  return (
-<div>
-<div className="elisc_tm_topbar fixed top-0 left-0 right-0 h-[50px] bg-white z-[15] hidden">
+    return (
+        <div>
+            <div className="elisc_tm_topbar fixed top-0 left-0 right-0 h-[50px] bg-white z-[15] hidden">
                 <div className="topbar_inner w-full h-full clear-both flex items-center justify-between py-0 px-[20px]">
                     <div className="logo" data-type="image"> <a className="image" href="#"><img
                         className="max-w-[100px] max-h-[40px]" src="assets/img/logo/logo.png" alt="logo" /></a><a
@@ -46,16 +46,28 @@ const SideMenu = () => {
                             <div className="image absolute inset-0 bg-no-repeat bg-cover bg-center"
                                 data-img-url="assets/img/about/1.jpg"></div>
                         </div>
-                        {/* <div className="menu_list w-full h-auto clear-both float-left mb-[50px]">
+                        <div className="menu_list w-full h-auto clear-both float-left mb-[50px]">
                             <ul className="transition_link m-0">
-                                <li className="mb-[7px]">
+                                <li className="mb-[7px] active">
                                     <Link to="/">Home</Link>
                                 </li>
-                                <li className="mb-[7px] active">
-                                    <Link to="/login">Login</Link>
+                                <li className="mb-[7px] ">
+                                    <Link to="/chit-details">Chit Details</Link>
+                                </li>
+                                <li className="mb-[7px] ">
+                                    <Link to="/pay-due">Pay Due</Link>
+                                </li>
+                                <li className="mb-[7px] ">
+                                    <Link to="/payment">Payment</Link>
+                                </li>
+                                <li className="mb-[7px] ">
+                                    <Link to="/closed-due">Closed Due</Link>
+                                </li>
+                                <li className="mb-[7px] ">
+                                    <Link to="/logout">Logout</Link>
                                 </li>
                             </ul>
-                        </div> */}
+                        </div>
                         <div className="social w-full float-left mb-[5px]">
                             <ul>
                                 <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
@@ -89,16 +101,28 @@ const SideMenu = () => {
                             {/* <h3><span>Robert Elisc<span className="back">Robert Elisc</span></span></h3> */}
                         </div>
                     </div>
-                    {/* <div className="menu scrollable w-full float-left">
+                    <div className="menu scrollable w-full float-left">
                         <ul className="transition_link h-full flex items-center justify-center flex-col">
-                            <li className="mb-[15px] ">
+                            <li className="mb-[7px] active">
                                 <Link to="/">Home</Link>
                             </li>
-                            <li className="mb-[12px] active">
-                                <Link to="/login">Login</Link>
+                            <li className="mb-[7px] ">
+                                <Link to="/chit-details">Chit Details</Link>
+                            </li>
+                            <li className="mb-[7px] ">
+                                <Link to="/pay-due">Pay Due</Link>
+                            </li>
+                            <li className="mb-[7px] ">
+                                <Link to="/payment">Payment</Link>
+                            </li>
+                            <li className="mb-[7px] ">
+                                <Link to="/closed-due">Closed Due</Link>
+                            </li>
+                            <li className="mb-[7px] ">
+                                <Link to="/logout">Logout</Link>
                             </li>
                         </ul>
-                    </div> */}
+                    </div>
                     <div className="copyright absolute bottom-[50px]">
                         <div className="social w-full float-left mb-[7px]">
                             <ul>
@@ -125,8 +149,8 @@ const SideMenu = () => {
                     </div>
                 </div>
             </div>
-</div>
-  )
+        </div>
+    )
 }
 
-export default SideMenu
+export default SideMenuTwo

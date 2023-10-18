@@ -6,6 +6,7 @@ import Signup from "./component/Signup/Singup";
 import ChitDetails from "./component/ChitDetails/ChitDetails";
 import PayDue from "./component/PayDue/PayDue";
 import Payment from "./component/Payment/Payment";
+import ClosedDue from "./component/ClosedDue/ClosedDue";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/chit-details" element={<ChitDetails />} />
           <Route path="/pay-due" element={<PayDue />} />
           <Route path="/Payment" element={<Payment />} />
+          <Route path="/closed-due" element={<ClosedDue />} />
 
         </Routes>
       </BrowserRouter>
