@@ -3,18 +3,20 @@ primary color :  #fff2d8,  yellow
 secondary color : #9a2526, red 
 */
 
-.container-chit-details {
+.chit-main-container{
     background-color: #fff2d8;
-    padding: 0px 150px;
+    padding: 50px 100px 0px 100px;
+    height: auto;
+
+}
+
+.container-chit-details {
     display: flex;
     align-items: center !important;
-    height: auto;
     position: relative;
 }
 
-.chit-details-left {
-    padding: 50px 0px;
-}
+
 
 .chit-details-title {
     color: #9a2526;
@@ -58,11 +60,17 @@ secondary color : #9a2526, red
 
 @media(max-width:1040px) {
 
+    .chit-main-container{
+        background-color: #fff2d8;
+        padding: 70px 50px 0px 50px;
+        height: auto;
+    }
+
     .container-chit-details {
-        padding: 0px 50px;
+       
         display: block;
         align-items: center !important;
-        height: auto;
+       
     }
 
     .chit-details-image-cover {
@@ -78,11 +86,15 @@ secondary color : #9a2526, red
         padding: 70px 0px 20px 0px;
     }
 
+
 }
 
 
 @media(max-width:500px) {
-    .container-chit-details {
-        padding: 0px 20px;
+    .chit-main-container{
+        background-color: #fff2d8;
+        padding: 70px 20px 0px 20px;
+        height: auto;
     }
+  
 }
