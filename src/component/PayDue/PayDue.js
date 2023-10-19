@@ -105,6 +105,7 @@ const PayDue = () => {
       <SideMenuTwo />
       <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px] ">
         <div className='payDue-container'>
+          <div className='payDue-main'>
           <div >
             <div className='payDue-title-outer'>
               <h2 className="joinNow">Join Now In 'Gold Virksham' SCHEME</h2>
@@ -355,8 +356,9 @@ const PayDue = () => {
 
             </Form>
           </div>
+          </div>
           <div style={{ paddingBottom: "50px" }}>
-            <h5 style={{ marginBottom: "10px", marginTop: "30px" }}>Adams</h5>
+            <h5 style={{ marginBottom: "10px", marginTop: "10px" }}>Adams</h5>
             <p style={{ marginBottom: "10px" }}>Gold Virksham Plus</p>
             <div style={{ marginTop: "20px" }}>
               <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} />
