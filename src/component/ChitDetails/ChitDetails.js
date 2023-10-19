@@ -69,7 +69,7 @@ const ChitDetails = () => {
             <SideMenuTwo />
             <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]">
 
-                <div className="details w-full min-h-[100vh] flex items-center container">
+                <div className="details w-full min-h-[100vh] flex items-center container-chit-details">
                     <div className="left w-1/2 chit-details-left">
                         <h3 className="chit-details-title">Hi Adams, <br /> Welcome To Thangam Jewellery</h3>
                         <h6 className="chit-details-subTitle" >Chit Details</h6>

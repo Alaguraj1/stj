@@ -3,12 +3,13 @@ primary color :  #fff2d8,  yellow
 secondary color : #9a2526, red 
 */
 
-.container {
+.container-chit-details {
     background-color: #fff2d8;
     padding: 0px 150px;
     display: flex;
     align-items: center !important;
     height: auto;
+    position: relative;
 }
 
 .chit-details-left {
@@ -28,6 +29,12 @@ secondary color : #9a2526, red
 .select-option-outer {
     display: flex;
     margin-bottom: 25px;
+}
+
+.chit-details-image-cover{
+    position: absolute;
+    bottom: 0px;
+    right: -25px;
 }
 
 :where(.css-dev-only-do-not-override-amq5gd).ant-table-wrapper .ant-table-thead>tr>th {
@@ -51,7 +58,7 @@ secondary color : #9a2526, red
 
 @media(max-width:1040px) {
 
-    .container {
+    .container-chit-details {
         padding: 0px 50px;
         display: block;
         align-items: center !important;
@@ -75,7 +82,7 @@ secondary color : #9a2526, red
 
 
 @media(max-width:500px) {
-    .container {
+    .container-chit-details {
         padding: 0px 20px;
     }
 }
