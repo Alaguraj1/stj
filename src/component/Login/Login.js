@@ -98,7 +98,7 @@ function Login() {
                                     >
                                         <Checkbox>Remember me</Checkbox>
                                     </Form.Item>
-                                    <p>Forget Password</p>
+                                    <p style={{textDecoration:'underline'}}>Forget Password</p>
                                 </div>
                                 <Form.Item>
                                     <Button type="primary" htmlType="submit" size="large" style={{ background: "#9a2526" }}>
@@ -106,7 +106,7 @@ function Login() {
                                     </Button>
                                 </Form.Item>
                             </Form>
-                            <p>New User? <Link to="/signup">Sign Up</Link></p>
+                            <p>New User? <Link to="/signup" style={{textDecoration:'underline'}}>Sign Up</Link></p>
                         </div>
                     </div>
 
