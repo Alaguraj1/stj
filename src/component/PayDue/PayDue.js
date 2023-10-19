@@ -103,7 +103,7 @@ const PayDue = () => {
   return (
     <div className="elisc_tm_all_wrap" data-magic-cursor="show" data-enter="fadeInLeft" data-exit="true">
       <SideMenuTwo />
-      <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px] "  style={{background:"#fff2d8"}}>
+      <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px] " >
         <div className='payDue-container'>
           <div className='payDue-main'>
           <div >

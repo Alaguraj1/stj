@@ -4,6 +4,8 @@ secondary color : #9a2526, red
 */
 
 .container-signup {
+  background-color:#fff2d8 ;
+
   padding: 0px 100px;
   display: flex;
   align-items: center !important;

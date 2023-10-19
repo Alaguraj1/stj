@@ -81,7 +81,7 @@ function Home() {
     return (
         <div className="elisc_tm_all_wrap" data-magic-cursor="show" data-enter="fadeInLeft" data-exit="true">
             <SideMenuTwo />
-            <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]"  style={{background:"#fff2d8"}}>
+            <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]"  >
                 <div className="home-container">
                     <div className="home-left">
                         <div className="priceDetails">
