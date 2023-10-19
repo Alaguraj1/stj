@@ -104,29 +104,19 @@ function Signup() {
                                         },
                                     ]}
                                 >
-                                    <Input.Password className="login-input-style"/>
+                                    <Input className="login-input-style"/>
                                 </Form.Item>
 
                                 <Form.Item
                                     name="confirmPassword"
-                                    label="Confirm Password"
-                                    dependencies={["password"]}
-                                    hasFeedback
+                                    label="Confirm Password"                                
                                     rules={[
                                         {
                                             message: "Please confirm your password!"
                                         },
-                                        ({ getFieldValue }) => ({
-                                            validator(_, value) {
-                                                if (!value || getFieldValue("password") === value) {
-                                                    return Promise.resolve();
-                                                }
-                                                return Promise.reject(new Error("The two passwords do not match"));
-                                            }
-                                        })
                                     ]}
                                 >
-                                    <Input.Password className="login-input-style"/>
+                                    <Input className="login-input-style"/>
                                 </Form.Item>
 
                                 <div style={{ display: "flex", justifyContent: "space-between" }}>
