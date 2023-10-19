@@ -36,9 +36,9 @@ function Signup() {
             <SideMenu />
             <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px] lo">
 
-                <div className='container'>
-                    <div className="login-left">
-                        <h1 className="login-title">WELCOME</h1>
+                <div className='container-signup'>
+                    <div className="signup-left">
+                        <h1 className="signup-title">WELCOME</h1>
                         <p className="login-subTitle">User Signup</p>
                         <div style={{ marginTop: "20px" }}>
                             <Form
@@ -151,7 +151,7 @@ function Signup() {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="signup-outer">
                         <img src="assets/img/bg-1.png" alt="image" className="login-side-img" />
                     </div>
 

@@ -36,7 +36,7 @@ function Login() {
             <SideMenu />
             <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px] lo">
 
-                <div className='container'>
+                <div className='container-login'>
                     <div className="login-left">
                         <h1 className="login-title">WELCOME</h1>
                         <p className="login-subTitle">User Login</p>
@@ -110,7 +110,7 @@ function Login() {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="login-outer">
                         <img src="assets/img/bg-1.png" alt="image" className="login-side-img" />
                     </div>
 

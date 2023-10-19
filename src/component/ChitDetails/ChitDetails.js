@@ -70,7 +70,7 @@ const ChitDetails = () => {
             <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]">
 
                 <div className="details w-full min-h-[100vh] flex items-center container">
-                    <div className="left w-1/2">
+                    <div className="left w-1/2 chit-details-left">
                         <h3 className="chit-details-title">Hi Adams, <br /> Welcome To Thangam Jewellery</h3>
                         <h6 className="chit-details-subTitle" >Chit Details</h6>
                         <div className='select-option-outer' >
@@ -133,7 +133,7 @@ const ChitDetails = () => {
                             <Button type="primary" size="large" style={{ backgroundColor: "#9a2526", marginTop: "10px" }} onClick={handleSubmit}>Add Chit</Button>
                         </div>
                     </div>
-                    <div className="right w-1/2 pl-[50px] login-image-cover">
+                    <div className="right w-1/2 pl-[50px] chit-details-image-cover">
                         <img src="assets/img/newChit.png" alt="image" className="new-chit-image" />
                     </div>
                 </div>

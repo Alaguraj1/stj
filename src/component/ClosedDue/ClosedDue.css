@@ -10,4 +10,21 @@ secondary color : #9a2526, red
 .closed-container{
     background-color:#fff2d8 ;
     padding: 0px 150px;
-    height: 100vh;}
+    height: 100vh;
+}
+
+@media(max-width:1040px){
+    .closed-container{
+        padding: 0px 50px;        
+    }
+
+    .closed-due-title{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:500px){
+    .closed-container{
+        padding: 0px 20px;        
+    }
+}

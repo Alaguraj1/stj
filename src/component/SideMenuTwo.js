@@ -32,19 +32,19 @@ const SideMenuTwo = () => {
 
     const { confirm } = Modal;
 
-const showConfirm = () => {
-  confirm({
-    title: 'Logout',
-    content: 'Do you Want to Logout ?',
-    onOk() {
-      console.log('OK');
-      navigate('/login');
-    },
-    onCancel() {
-      console.log('Cancel');
-    },
-  });
-};
+    const showConfirm = () => {
+        confirm({
+            title: 'Logout',
+            content: 'Do you Want to Logout ?',
+            onOk() {
+                console.log('OK');
+                navigate('/login');
+            },
+            onCancel() {
+                console.log('Cancel');
+            },
+        });
+    };
 
 
     return (
@@ -64,50 +64,54 @@ const showConfirm = () => {
                 </div>
             </div>
             <div className={`elisc_tm_mobile_menu ${mobileMenuStatus}`}>
-                <div className="inner relative w-full h-full text-right px-[20px] pt-[70px] pb-[20px]">
-                    <div className="wrapper">
-                        <div className="avatar w-[70px] h-[70px] relative float-right mb-[50px]">
-                            <div className="image absolute inset-0 bg-no-repeat bg-cover bg-center"
-                                data-img-url="assets/img/about/1.jpg"></div>
+                <div className="inner relative w-full h-full text-right px-[20px] pt-[30px] pb-[20px] outer-menu">
+                    <div className="wrapper sidemenu-main">
+                        <div>
+                            <div className="avatar w-[70px] h-[70px] relative float-right mb-[50px] responsive-menu">
+                                <div className="image absolute inset-0 bg-no-repeat bg-cover bg-center"
+                                    data-img-url="assets/img/about/1.jpg"></div>
+                            </div>
+                            <div className="menu_list w-full h-auto clear-both float-left mb-[50px] ">
+                                <ul className="transition_link m-0">
+                                    <li className="mb-[7px] active">
+                                        <Link to="/">Home</Link>
+                                    </li>
+                                    <li className="mb-[7px] ">
+                                        <Link to="/chit-details">Chit Details</Link>
+                                    </li>
+                                    <li className="mb-[7px] ">
+                                        <Link to="/pay-due">Pay Due</Link>
+                                    </li>
+                                    <li className="mb-[7px] ">
+                                        <Link to="/payment">Payment</Link>
+                                    </li>
+                                    <li className="mb-[7px] ">
+                                        <Link to="/closed-due">Closed Due</Link>
+                                    </li>
+                                    <li className="mb-[7px]" onClick={showConfirm}>
+                                        <Link to="">Logout</Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="menu_list w-full h-auto clear-both float-left mb-[50px]">
-                            <ul className="transition_link m-0">
-                                <li className="mb-[7px] active">
-                                    <Link to="/">Home</Link>
-                                </li>
-                                <li className="mb-[7px] ">
-                                    <Link to="/chit-details">Chit Details</Link>
-                                </li>
-                                <li className="mb-[7px] ">
-                                    <Link to="/pay-due">Pay Due</Link>
-                                </li>
-                                <li className="mb-[7px] ">
-                                    <Link to="/payment">Payment</Link>
-                                </li>
-                                <li className="mb-[7px] ">
-                                    <Link to="/closed-due">Closed Due</Link>
-                                </li>
-                                <li className="mb-[7px]  onClick={showModal}">
-                                    <Link to="">Logout</Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="social w-full float-left mb-[5px]">
-                            <ul>
-                                <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
-                                    src="assets/img/svg/social/facebook.svg" alt="image" /></a></li>
-                                <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
-                                    src="assets/img/svg/social/twitter.svg" alt="image" /></a></li>
-                                <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
-                                    src="assets/img/svg/social/instagram.svg" alt="image" /></a></li>
-                                <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
-                                    src="assets/img/svg/social/dribbble.svg" alt="image" /></a></li>
-                                <li className="inline-block"><a className="text-[#333]" href="#"><img className="svg"
-                                    src="assets/img/svg/social/tik-tok.svg" alt="image" /></a></li>
-                            </ul>
-                        </div>
-                        <div className="copyright w-full float-left">
-                            Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
+                        <div className='socialmedia-outer'>
+                            <div className="social w-full float-left mb-[5px]">
+                                <ul>
+                                    <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
+                                        src="assets/img/svg/social/facebook.svg" alt="image" /></a></li>
+                                    <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
+                                        src="assets/img/svg/social/twitter.svg" alt="image" /></a></li>
+                                    <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
+                                        src="assets/img/svg/social/instagram.svg" alt="image" /></a></li>
+                                    <li className="mr-[8px] inline-block"><a className="text-[#333]" href="#"><img className="svg"
+                                        src="assets/img/svg/social/dribbble.svg" alt="image" /></a></li>
+                                    <li className="inline-block"><a className="text-[#333]" href="#"><img className="svg"
+                                        src="assets/img/svg/social/tik-tok.svg" alt="image" /></a></li>
+                                </ul>
+                            </div>
+                            <div className="copyright w-full float-left">
+                                Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,7 +128,7 @@ const showConfirm = () => {
                                 </div>
                         </div> */}
                         <div className='logo-cover'>
-                            <img src='assets/img/logo/logo.png' alt='' className='logo-mobile'/>
+                            <img src='assets/img/logo/logo.png' alt='' className='logo-mobile' />
                         </div>
                         <div className="name w-full float-left mt-[-19px]">
                             {/* <h3><span>Robert Elisc<span className="back">Robert Elisc</span></span></h3> */}
@@ -176,7 +180,7 @@ const showConfirm = () => {
                             Copyright © {new Date().getFullYear()} Sree Thangam Jewellery. Concept by <Link to="https://irepute.in/" target='blank'>repute.</Link>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

@@ -1,28 +1,31 @@
-
 /* 
 primary color :  #fff2d8,  yellow
 secondary color : #9a2526, red 
 */
 
-.container{
-    background-color:#fff2d8 ;
+.container {
+    background-color: #fff2d8;
     padding: 0px 150px;
     display: flex;
     align-items: center !important;
     height: auto;
 }
 
-.chit-details-title{
-    color:#9a2526 ;
+.chit-details-left {
+    padding: 50px 0px;
+}
+
+.chit-details-title {
+    color: #9a2526;
     margin-bottom: 20px;
 }
 
-.chit-details-subTitle{
+.chit-details-subTitle {
     font-size: 24px;
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.select-option-outer{
+.select-option-outer {
     display: flex;
     margin-bottom: 25px;
 }
@@ -32,12 +35,47 @@ secondary color : #9a2526, red
     color: white !important;
     font-size: 14px;
     overflow-x: auto !important;
-  }
-  
-  :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead >tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead >tr>td{
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th,
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>td {
     background: #9a2526;
     font-size: 14px;
     overflow-x: auto !important;
     color: white !important;
 
+}
+
+
+
+
+@media(max-width:1040px) {
+
+    .container {
+        padding: 0px 50px;
+        display: block;
+        align-items: center !important;
+        height: auto;
+    }
+
+    .chit-details-image-cover {
+        display: none;
+    }
+
+    .chit-details-title {
+        font-size: 25px;
+    }
+
+    .chit-details-left {
+        width: 100%;
+        padding: 70px 0px 20px 0px;
+    }
+
+}
+
+
+@media(max-width:500px) {
+    .container {
+        padding: 0px 20px;
+    }
 }
