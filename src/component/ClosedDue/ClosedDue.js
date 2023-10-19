@@ -88,7 +88,7 @@ const ClosedDue = () => {
                     </div>
 
                     <div style={{ paddingTop: "20px" }}>
-                        <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} />
+                        <Table dataSource={dataSource} columns={columns} pagination={false}  style={{width:"100%"}} />
                     </div>
                 </div>
             </div>

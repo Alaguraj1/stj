@@ -361,7 +361,7 @@ const PayDue = () => {
             <h5 style={{ marginBottom: "10px", marginTop: "10px" }}>Adams</h5>
             <p style={{ marginBottom: "10px" }}>Gold Virksham Plus</p>
             <div style={{ marginTop: "20px" }}>
-              <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} />
+              <Table dataSource={dataSource} columns={columns} pagination={false} style={{width:"100%"}}  />
             </div>
           </div>
         </div>

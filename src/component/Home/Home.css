@@ -60,6 +60,9 @@ secondary color : #9a2526, red
 }
 
 
+:where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-cell, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-thead>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper .ant-table-tbody>tr>td, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>th, :where(.css-dev-only-do-not-override-3mqfnx).ant-table-wrapper tfoot>tr>td{
+    padding: 10px 10px;
+}
 
 
 @media(max-width:1040px) {

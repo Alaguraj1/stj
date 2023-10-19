@@ -109,7 +109,7 @@ const Payment = () => {
                     </div>
 
                     <div style={{ paddingTop: "20px" }}>
-                        <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} rowSelection={{
+                        <Table dataSource={dataSource} columns={columns} pagination={false}  style={{width:"100%"}}  rowSelection={{
                             type: selectionType,
                             ...rowSelection,
                         }} />

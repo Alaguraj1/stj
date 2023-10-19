@@ -40,7 +40,7 @@ function Home() {
 
     const columns = [
         {
-            title: 'S No',
+            title: 'S.No',
             dataIndex: 'sno',
             key: 'sno',
         },
@@ -91,7 +91,7 @@ function Home() {
                         <div className="home-payDue">
                             <div className="home-table-outer">
                             <h4 className="home-subTitle">Pay Due</h4>
-                            <Table dataSource={dataSource} columns={columns} pagination={false} scroll={{ x: 500 }} className="custom-table" />
+                            <Table dataSource={dataSource} columns={columns} pagination={false} style={{width:"100%"}} className="custom-table" />
                             </div>
                         </div>
 
