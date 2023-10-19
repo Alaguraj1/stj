@@ -232,7 +232,7 @@ const ChitDetails = () => {
                     </Form>
 
 
-                    <div className="details w-full min-h-[100vh] flex items-center container-chit-details">
+                    <div className="details w-full flex items-center container-chit-details">
                         <div className="left w-1/2 chit-details-left">
 
 

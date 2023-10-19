@@ -5,10 +5,12 @@ primary color :  #fff2d8,  yellow
 secondary color : #9a2526, red 
 */
 
+.closedDue-containerfluid{
+    background-color:#fff2d8 ;
 
+}
 
 .closed-container{
-    background-color:#fff2d8 ;
     padding: 0px 100px;
     height: 100vh;
 }

@@ -58,18 +58,18 @@ function Home() {
             title: 'Due',
             key: 'due',
             render: (text, record) => {
-              const amountContent = record.shouldPay ? record.amount : 'Nill';
-              return (
-                <span>
-                  {record.shouldPay ? (
-                    <Button onClick={() => handlePay(record)}>{amountContent}</Button>
-                  ) : (
-                    <span>{amountContent}</span>
-                  )}
-                </span>
-              );
+                const amountContent = record.shouldPay ? record.amount : 'Nill';
+                return (
+                    <span>
+                        {record.shouldPay ? (
+                            <Button onClick={() => handlePay(record)}>{amountContent}</Button>
+                        ) : (
+                            <span>{amountContent}</span>
+                        )}
+                    </span>
+                );
             },
-          },
+        },
     ];
 
 
@@ -82,29 +82,31 @@ function Home() {
         <div className="elisc_tm_all_wrap" data-magic-cursor="show" data-enter="fadeInLeft" data-exit="true">
             <SideMenuTwo />
             <div className="elisc_tm_mainpart w-full min-h-[100vh] clear-both float-left pl-[370px]"  >
-                <div className="home-container">
-                    <div className="home-left">
-                        <div className="priceDetails">
-                            <marquee className="product-price">Gold Rate : ₹ 5,565 /Gram  |  Silver Rate : ₹ 78 /Gram  |  Platinum Rate : ₹ 3,308 /Gram  |  Diamont Rate : ₹ 3,25,000 /Gram</marquee>
-                        </div>
-
-                        <div className="home-payDue">
-                            <div className="home-table-outer">
-                            <h4 className="home-subTitle">Pay Due</h4>
-                            <Table dataSource={dataSource} columns={columns} pagination={false} style={{width:"100%"}} className="custom-table" />
+                <div className="home-container-fluid">
+                    <div className="home-container">
+                        <div className="home-left">
+                            <div className="priceDetails">
+                                <marquee className="product-price">Gold Rate : ₹ 5,565 /Gram  |  Silver Rate : ₹ 78 /Gram  |  Platinum Rate : ₹ 3,308 /Gram  |  Diamont Rate : ₹ 3,25,000 /Gram</marquee>
                             </div>
+
+                            <div className="home-payDue">
+                                <div className="home-table-outer">
+                                    <h4 className="home-subTitle">Pay Due</h4>
+                                    <Table dataSource={dataSource} columns={columns} pagination={false} style={{ width: "100%" }} className="custom-table" />
+                                </div>
+                            </div>
+
+                            <div className="discount-outer">
+                                <h4 className="home-subTitle">Discount</h4>
+                                <img src="assets/img/home-discount.avif" alt="" />
+                            </div>
+
                         </div>
 
-                        <div className="discount-outer">
-                        <h4 className="home-subTitle">Discount</h4>
-                            <img src="assets/img/home-discount.avif" alt="" />
+                        <div className="home-right">
+                            <img src="assets/img/bg-1.png" alt="image" className="login-side-img" />
+
                         </div>
-
-                    </div>
-
-                    <div className="home-right">
-                        <img src="assets/img/bg-1.png" alt="image" className="login-side-img" />
-
                     </div>
                 </div>
             </div>
