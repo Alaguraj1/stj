@@ -1,10 +1,23 @@
 
 import "./Home.css"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SideMenuTwo from "../SideMenuTwo";
 import { Table, Button } from 'antd';
+import axios from "axios";
 
 function Home() {
+
+    const [productRate, setProductRate] = useState([])
+
+    useEffect(() => {
+        axios.get("http://tjchitwebuad.thechennaisilks.com:5775/API/login/GoldRate").then((res) => {
+            setProductRate(res?.data?.results)
+        }).catch((error) => {
+            console.log(error)
+        })
+    },[])
+
+    console.log("productRate", productRate)
 
 
     const dataSource = [
@@ -86,7 +99,16 @@ function Home() {
                     <div className="home-container">
                         <div className="home-left">
                             <div className="priceDetails">
-                                <marquee className="product-price">Gold Rate : ₹ 5,565 /Gram  |  Silver Rate : ₹ 78 /Gram  |  Platinum Rate : ₹ 3,308 /Gram  |  Diamont Rate : ₹ 3,25,000 /Gram</marquee>
+
+                                {
+                                    productRate.map((value) => {
+                                        console.log("value", value.RATE1)
+                                        return(
+                                            <marquee className="product-price">Gold Rate : ₹ {value.RATE1} per GRAM   |  Silver Rate : ₹ {value.RATE2} per GRAM    |  Platinum Rate : ₹ {value.RATE4} per GRAM  </marquee>
+
+                                        )
+                                    })
+                                }
                             </div>
 
                             <div className="home-payDue">
