@@ -4,10 +4,13 @@ import React, { useEffect, useState } from 'react';
 import SideMenuTwo from "../SideMenuTwo";
 import { Table, Button } from 'antd';
 import axios from "axios";
+import { CalendarFilled, CaretDownOutlined, CaretUpOutlined  } from '@ant-design/icons';
+import { Modal } from 'antd';
 
 function Home() {
-
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [productRate, setProductRate] = useState([])
+    const [goldMaxMin, setGoldMaxMin]  = useState([])
 
     useEffect(() => {
         axios.get("http://tjchitwebuad.thechennaisilks.com:5775/API/login/GoldRate").then((res) => {
@@ -15,10 +18,20 @@ function Home() {
         }).catch((error) => {
             console.log(error)
         })
-    },[])
+    }, [])
 
     console.log("productRate", productRate)
 
+
+    useEffect(() => {
+        axios.get("http://tjchitwebuad.thechennaisilks.com:5775/api/login/MinMaxGoldRate?MonthYear=06-2023").then((res) => {
+            setGoldMaxMin(res?.data?.results)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }, []) 
+
+    console.log("goldMaxMin", goldMaxMin)
 
     const dataSource = [
         {
@@ -86,6 +99,18 @@ function Home() {
     ];
 
 
+    // modal
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
+
+
     const handlePay = (record) => {
         // Handle the payment for the selected record
         console.log('Pay', record);
@@ -99,13 +124,12 @@ function Home() {
                     <div className="home-container">
                         <div className="home-left">
                             <div className="priceDetails">
-
+                                <CalendarFilled className="calendor" onClick={showModal} />
                                 {
                                     productRate.map((value) => {
                                         console.log("value", value.RATE1)
-                                        return(
+                                        return (
                                             <marquee className="product-price">Gold Rate : ₹ {value.RATE1} per GRAM   |  Silver Rate : ₹ {value.RATE2} per GRAM    |  Platinum Rate : ₹ {value.RATE4} per GRAM  </marquee>
-
                                         )
                                     })
                                 }
@@ -127,14 +151,35 @@ function Home() {
 
                         <div className="home-right">
                             <img src="assets/img/bg-1.png" alt="image" className="login-side-img" />
-
                         </div>
                     </div>
                 </div>
+
+                <Modal title="SEP-GOLD RATE" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={false}>
+                   <div className="gold-stage">
+                    <h6 className="gold-low">LOW <CaretDownOutlined /></h6>
+                    <h6 className="gold-heigh">HEIGH <CaretUpOutlined /></h6>
+                    <h6 className="gold-gram">GRAM</h6>
+                   </div>
+                   <div className="gold-price">
+                    {
+                        goldMaxMin.map((value) =>  {
+                            return(
+                                <>
+                                 <p  className="gold-minprice">Rs : {value.MINRATE}</p>
+                                <p className="gold-maxprice">Rs : {value.MAXRATE}</p>
+                                <p className="gold-gramprice">1 Gram</p>
+                                </>                              
+                            )
+                        })
+                    }
+                                      
+                   </div>
+                </Modal>
+
             </div>
 
         </div>
     );
 }
-
 export default Home;

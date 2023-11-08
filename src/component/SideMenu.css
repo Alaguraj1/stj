@@ -7,9 +7,27 @@ secondary color : #9a2526, red
     display: flex;
     justify-content: center;
 }
+:where(.css-dev-only-do-not-override-3mqfnx).ant-modal-confirm .ant-modal-confirm-content{
+    color: #f7cd5b;
+
+}
+:where(.css-dev-only-do-not-override-3mqfnx).ant-modal-confirm .ant-modal-confirm-title{
+    color: white;
+}
 
 :where(.css-dev-only-do-not-override-3mqfnx).ant-modal-confirm .ant-modal-confirm-btns .ant-btn+.ant-btn{
-    background:#9a2526 ;
+    background:#f7cd5b ;
+    color: #9a2526;
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-default {
+    border-color: #f7cd5b;
+    color: #f7cd5b;
+}
+
+:where(.css-dev-only-do-not-override-3mqfnx).ant-btn-default:hover {
+    border-color: #f8dc8e !important;
+    color: #f8dc8e !important;
 }
 
 
