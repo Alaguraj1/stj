@@ -31,7 +31,9 @@ secondary color : #9a2526, red
 }
 
 
-
+:where(.css-dev-only-do-not-override-3mqfnx).ant-modal-confirm-warning .ant-modal-confirm-body>.anticon, :where(.css-dev-only-do-not-override-3mqfnx).ant-modal-confirm-confirm .ant-modal-confirm-body>.anticon {
+    display: none;
+}
 
 @media(max-width:1040px){
 
